@@ -1,5 +1,7 @@
 # Tiny Tapeout - Game of Life Cell Logic
 
+⇒ [Simulate this project on Wokwi](https://wokwi.com/projects/341266732010177108)
+
 ## Inputs 
 
 8 bits, each containing one neighbor cell values (0 = dead, 1 = alive)
