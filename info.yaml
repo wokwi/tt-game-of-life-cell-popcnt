@@ -8,11 +8,11 @@
 project: 
   author:       "Uri Shaked (Wokwi)"      # Your name
   title:        "Game of Life - Cell Neighbor Count"      # Project title
-  description:  ""      # Short description of what your project does
-  how_it_works: ""      # Longer description of how the project works
-  how_to_test:  ""      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
+  description:  "Logic to decide about the fate of a cell in the game of life: die, stay alive, or spring to life"      # Short description of what your project does
+  how_it_works: "The 8 inputs represent the current state of the neighboring cells (0 = dead, 1 = alive). The fate of the cell is in bits 2 and 3 of the output. The cell will be alive if either bit 2 is on and it was alive in the previous generation, or if bit 3 is on. Otherwise, it'll die."      # Longer description of how the project works
+  how_to_test:  "Connect 8 DIP switches to the 8 input pins, and LEDs to bits 2 and 3 of the output. Observe the value of the output bits: bit 2 should be on when either two or three of the DIP switches are on, and bit 3 should be on when exactly three DIP switches are on."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   external_hw:  ""      # Describe any external hardware needed
-  doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
+  doc_link:     "https://github.com/wokwi/tt-game-of-life-cell-popcnt/blob/main/README.md"      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     0       # Clock frequency in Hz (if required)
   language:     "wokwi" # other examples include Verilog, Amaranth, VHDL, etc
   wokwi_id:     341266732010177108       # the wokwi ID
